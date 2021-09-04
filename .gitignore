@@ -1,3 +1,8 @@
+#node modules
 node_modules
+#env
 .env
+#DS store for macs
 .DS_Store
+#checklist
+checklist.md
