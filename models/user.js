@@ -31,6 +31,7 @@ const userSchema = new Schema({
         ref: "User"
     }]
 })
+//create a vitual friend count that retrives the length of the user's friends
 userSchema.virtual("friendCount").get(() => {
     return this.friends.length
 });

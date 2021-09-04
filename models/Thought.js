@@ -10,7 +10,7 @@ const valTxtLength = function(text) {
     }
 }
 
-const ThoughtSchema = new Schema({
+const thoughtSchema = new Schema({
     thoughtText: {
         type: String,
         required: true,
@@ -34,7 +34,11 @@ const ThoughtSchema = new Schema({
     ]
     
 })
+// create a Virtual called reactionCount that retrives teh length of the thought's reactions
+thoughtSchema.virtual("reactionCount").get(() => {
+    return this.reactions.length
+})
 
 // create the Thought  model using the Thought Schema
-const Thought  = model('Thought', ThoughtSchema);
+const Thought  = model('Thought', thoughtSchema);
 module.exports = Thought;
