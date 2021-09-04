@@ -1,4 +1,4 @@
-const { User } = require("../models");
+const { User } = require("../models/User");
 
 const userController = {
     // get all users
@@ -55,6 +55,22 @@ const userController = {
             res.json(dbUserData);
         })
         .catch(err => res.status(400).json(err));
+    },
+    //create friend
+    createFriend({ params }, res) {
+        User.findOneAndUpdate(
+            { _id: params.id },
+            { $push: { friends: params.friendId}},
+            { new: true }
+            )
+            .then(dbUserData => {
+                if (!dbUserData) {
+                  res.status(404).json({ message: "No User found with this id!"})
+                  return;  
+                }
+                res.json(dbUserData);
+            })
+            .catch(err => res.json(err));
     }
 };
 
