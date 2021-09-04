@@ -6,13 +6,13 @@ const {
     createUser,
     updateUser,
     deleteUser
-} = require('../../controllers/user-controller')
+} = require('../../controllers/user-controller');
 
 // Set up Get all and Post at /api/user
 router
-.route('/')
-.get(getAllUser)
-.post(createUser);
+    .route('/')
+    .get(getAllUser)
+    .post(createUser);
 
 // set up GET and, PUT, and DELETE at /api/user/:id
 router
