@@ -11,6 +11,28 @@ const valTxtLength = function(text) {
     }
 }
 
+const reactionSchema = new Schema({
+    reactionId: {
+        type: Schema.Types.ObjectId,
+        default: () => new Types.ObjectId()
+    },
+    reactionBody: {
+        type: String,
+        required: true,
+        maxLength: 280
+    },
+    userName: {
+        type: String,
+        required: true
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        get: timestamp => dateFormat(timestamp)     
+    }
+
+});
+
 const thoughtSchema = new Schema({
     thoughtText: {
         type: String,
@@ -32,32 +54,15 @@ const thoughtSchema = new Schema({
     },
     reactions: [
         reactionSchema
-    ] 
+    ],
+    toJSON:{
+        virtuals: true,
+        getters:true
+    }, 
+    id:false 
 });
 
-const reactionSchema = new Schema({
-    reactionId: {
-        type: Schema.Types.ObjectId,
-        default: () => new Types.ObjectId()
-    },
-    reactionBody: {
-        type: String,
-        required: true,
-        maxLength: 280
-    },
-    userName: {
-        type: String,
-        required: true
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-        get: timestamp => dateFormat(timestamp)     
-    }
-    // ,
-    // {toJSON:{getters:true}, id:false}
 
-});
 
 // create a Virtual called reactionCount that retrives teh length of the thought's reactions
 thoughtSchema.virtual("reactionCount").get(() => {
