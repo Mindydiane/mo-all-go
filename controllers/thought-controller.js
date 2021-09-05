@@ -1,4 +1,4 @@
-const { User, Thought, reactionSchema } = require("../models");
+const { User, Thought } = require("../models");
 
 const thoughtController = {
     // get all thoughts
@@ -72,7 +72,7 @@ const thoughtController = {
     //create reaction
     createReaction({ body }, res) {
         console.log(body);
-        reactionSchema.create(body)
+        Thought.create(body)
         .then((dbReactionData) => {
             return User.findOneAndUpdate(
                 { userName : body.userName },

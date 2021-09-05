@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 //validate Text Length
@@ -30,6 +30,12 @@ const thoughtSchema = new Schema({
         type: String,
         required: true
     },
+    reactions: [
+        reactionSchema
+    ] 
+});
+
+const reactionSchema = new Schema({
     reactionId: {
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
@@ -51,7 +57,8 @@ const thoughtSchema = new Schema({
     // ,
     // {toJSON:{getters:true}, id:false}
 
-})
+});
+
 // create a Virtual called reactionCount that retrives teh length of the thought's reactions
 thoughtSchema.virtual("reactionCount").get(() => {
     return this.reactions.length
@@ -60,4 +67,5 @@ thoughtSchema.virtual("reactionCount").get(() => {
 // create the Thought  model using the Thought Schema
 const Thought  = model('Thought', thoughtSchema);
 
-module.exports = Thought;
+
+module.exports = {Thought}
