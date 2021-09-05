@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
-const dateFormat = require('../utils/dateFormat')
+const dateFormat = require('../utils/dateFormat');
+const reactionSchema = require('./Reaction')
 //validate Text Length
 const valTxtLength = function(text) {
     const len = text.length
@@ -32,6 +33,7 @@ const thoughtSchema = new Schema({
     reactions: [
         reactionSchema
     ]
+    
     
 })
 // create a Virtual called reactionCount that retrives teh length of the thought's reactions

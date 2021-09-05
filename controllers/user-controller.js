@@ -1,4 +1,4 @@
-const { User } = require("../models/User");
+const { User } = require("../models");
 
 const userController = {
     // get all users
@@ -71,6 +71,16 @@ const userController = {
                 res.json(dbUserData);
             })
             .catch(err => res.json(err));
+    },
+    // delete friend
+    deleteFriend({ params }, res) {
+        User.findOneAndDelete(
+            { _id: params.friendId },
+            { $pull: { friends: { friendId: params.friendId }}},
+            { new: true }
+        )
+        .then(dbUserData => res.json(dbUserData))
+        .catch(err => res.json(err));
     }
 };
 
