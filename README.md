@@ -10,6 +10,9 @@ A terminal DB for a social network, using mongo DB
 * create and delete reactions to thoughts
 * add and remove friends to a user's friends list
 
+![mo-all-go-pt1-intro (8)](https://user-images.githubusercontent.com/80286982/132963411-8832af6e-3d26-43a7-8341-fd56cb781727.gif)
+
+
 ### Watch first walk through video intro
 
 #### Screencastify
