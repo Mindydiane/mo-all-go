@@ -1,7 +1,7 @@
 const { Schema, model, Types } = require("mongoose");
 const dateFormat = require("../utils/dateFormat");
 const reactionSchema = require("./Reaction");
-
+// NOT A MODEL ONLY A SCHEMA
 //validate Text Length
 const valTxtLength = function (text) {
   const len = text.length;
