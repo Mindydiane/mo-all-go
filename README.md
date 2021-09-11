@@ -23,7 +23,13 @@ https://www.youtube.com/watch?v=FtYO3OndI9k
 ### Screencastify
 https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
 
+### YouTube
+https://youtu.be/QNU5TszbSZY
+
 ### watch third walk through video about reactions
 
 ### Screencastify
 https://drive.google.com/file/d/1b4BWTfm5TQUM3qO9K0FpG624dYnblJtc/view?usp=sharing
+
+### YouTube
+https://youtu.be/-E9Mgbf2EbU
