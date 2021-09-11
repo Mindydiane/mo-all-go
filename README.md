@@ -10,7 +10,12 @@ A terminal DB for a social network, using mongo DB
 * create and delete reactions to thoughts
 * add and remove friends to a user's friends list
 
+### watch first walk through video intro
 
-### watch walk third walk through video
+### Screencastify
+https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
+
+### watch third walk through video about reactions
+
 ### Screencastify
 https://drive.google.com/file/d/1b4BWTfm5TQUM3qO9K0FpG624dYnblJtc/view?usp=sharing
