@@ -59,7 +59,6 @@ const thoughtController = {
     },
     //delete thought
     deleteThought({ params }, res) {
-        console.log('Hello', params.id);
         Thought.findOneAndDelete({ _id: params.id},)
         .then(dbThoughtData => {
             if (!dbThoughtData) {
@@ -71,24 +70,34 @@ const thoughtController = {
         .catch(err => res.status(400).json(err));
     },
     //create reaction
-    createReaction({ body }, res) {
+    createReaction({ params, body }, res) {
         console.log(body);
-        Reaction.create(body)
+        Thought.findOneAndUpdate({_id:params.id}, {$addToSet:{reactions:body }}, {runValidators: true, new:true} )
         .then((dbReactionData) => {
-            return User.findOneAndUpdate(
-                { userName : body.userName },
-                { $push: { reactions: dbReactionData._id } },
-                { new: true }
-            );
-        })
-        .then (dbUserData => {
-            if (!dbUserData) {
-                res.status(404).json({ message: 'No User found with that id!'});
-                return;
+            
+            if (!dbReactionData) {
+                 return res.status(404).json({ message: 'No reaction found with this id'})
             }
-            res.json(dbUserData);
+            res.json(dbReactionData)
         })
+        
         .catch(err => res.json(err));
+    },
+    // remove reaction
+    removeReaction({ params, body }, res) {
+        console.log(params);
+        Thought.findOneAndUpdate({_id:params.id}, {$pull:{reactions:{reactionId:params.reactionId} }}, {runValidators: true, new:true} )
+        .then((dbReactionData) => {
+            
+            if (!dbReactionData) {
+                 return res.status(404).json({ message: 'No reaction found with this id'})
+            }
+            res.json(dbReactionData)
+        })
+        
+        .catch(err => res.json(err));
+        
+
     }
 };
 
