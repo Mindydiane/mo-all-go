@@ -59,8 +59,8 @@ const thoughtSchema = new Schema(
   }
 );
 
-// create a Virtual called reactionCount that retrives teh length of the thought's reactions
-thoughtSchema.virtual("reactionCount").get(() => {
+// create a Virtual called reactionCount that retrives the length of the thought's reactions
+thoughtSchema.virtual("reactionCount").get( function() {
   return this.reactions.length;
 });
 

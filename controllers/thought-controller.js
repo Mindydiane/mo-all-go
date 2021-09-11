@@ -59,6 +59,7 @@ const thoughtController = {
     },
     //delete thought
     deleteThought({ params }, res) {
+        console.log('Hello', params.id);
         Thought.findOneAndDelete({ _id: params.id},)
         .then(dbThoughtData => {
             if (!dbThoughtData) {
@@ -72,7 +73,7 @@ const thoughtController = {
     //create reaction
     createReaction({ body }, res) {
         console.log(body);
-        Thought.create(body)
+        Reaction.create(body)
         .then((dbReactionData) => {
             return User.findOneAndUpdate(
                 { userName : body.userName },
