@@ -15,6 +15,11 @@ A terminal DB for a social network, using mongo DB
 ### Screencastify
 https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
 
+### watch second walk through video continuation of thought and link and remove friends
+
+### Screencastify
+https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
+
 ### watch third walk through video about reactions
 
 ### Screencastify
