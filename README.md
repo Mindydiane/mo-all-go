@@ -40,6 +40,14 @@ https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
 #### YouTube
 https://www.youtube.com/watch?v=FtYO3OndI9k
  
+## Credits
+
+Author : Mindy Diane Garza 
+
+![image](https://user-images.githubusercontent.com/80286982/132966193-7ea60c44-beea-461a-806f-04678beb1fb8.png)
+
+GitHub :
+https://github.com/mindydiane
 
 ### Watch second walk through video continuation of thought and link and remove friends
 
