@@ -29,7 +29,7 @@ A terminal DB for a social network, using mongo DB
 ` npm start (If any issues watch walkthrough intro video)
 => Insomnia was used to test CRUD Create-Read-Update-Delete Routes`
 
-` To add frontend files : In root create a folder called public => upload frontend files for social media network
+` To add frontend files : In root create a folder called public => in public folder upload frontend files for social media network
 `
 
 ![mo-all-go-pt3-delete-user](https://user-images.githubusercontent.com/80286982/132966726-f35443ea-8dc7-45e2-b09a-3b4f2402d313.gif)
