@@ -70,3 +70,7 @@ https://drive.google.com/file/d/1b4BWTfm5TQUM3qO9K0FpG624dYnblJtc/view?usp=shari
 
 #### YouTube
 https://youtu.be/-E9Mgbf2EbU
+
+## License
+
+Licensed under the [MIT License](LICENSE).
