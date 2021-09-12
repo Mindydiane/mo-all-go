@@ -49,9 +49,9 @@ Author : Mindy Diane Garza
 GitHub :
 https://github.com/mindydiane
 
-![mo-all-go-pt4-post get-Thought](https://user-images.githubusercontent.com/80286982/132966548-182b4ab9-05d9-4017-855b-81c18959087a.gif)
-
 ### Watch second walk through video continuation of thought and link and remove friends
+
+![mo-all-go-pt4-post get-Thought](https://user-images.githubusercontent.com/80286982/132966548-182b4ab9-05d9-4017-855b-81c18959087a.gif)
 
 #### Screencastify
 https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
@@ -59,10 +59,9 @@ https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
 #### YouTube
 https://youtu.be/QNU5TszbSZY
 
-![mo-all-go-pt7-post delete-Reactions](https://user-images.githubusercontent.com/80286982/132966624-e8df3432-b02c-4633-940a-bd5a5f11e267.gif)
-
-
 ### Watch third walk through video about reactions
+
+![mo-all-go-pt7-post delete-Reactions](https://user-images.githubusercontent.com/80286982/132966624-e8df3432-b02c-4633-940a-bd5a5f11e267.gif)
 
 #### Screencastify
 https://drive.google.com/file/d/1b4BWTfm5TQUM3qO9K0FpG624dYnblJtc/view?usp=sharing
