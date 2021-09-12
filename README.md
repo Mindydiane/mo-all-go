@@ -34,6 +34,8 @@ A terminal DB for a social network, using mongo DB
 
 ### Watch first walk through video intro
 
+![mo-all-go-pt3-delete-user](https://user-images.githubusercontent.com/80286982/132966726-f35443ea-8dc7-45e2-b09a-3b4f2402d313.gif)
+
 #### Screencastify
 https://drive.google.com/file/d/14GJ6CfSD79AKUrncHhXTB8TuZ-WlG2iI/view
 
