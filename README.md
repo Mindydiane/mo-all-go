@@ -14,21 +14,22 @@ A terminal DB for a social network, using mongo DB
 * create and delete reactions to thoughts
 * add and remove friends to a user's friends list
 
-## Table of Contents :fallen_leaf:
+## Table of Contents 
+:fallen_leaf:
 
-* [Installation](#installation) :fallen_leaf:
-* [Usage](#usage) :fallen_leaf:
-* [Credits](#credits) :fallen_leaf:
-* [License](#license) :fallen_leaf:
+* [Installation](#installation)   :fallen_leaf:
+* [Usage](#usage)    :fallen_leaf:
+* [Credits](#credits)     :fallen_leaf:
+* [License](#license)    :fallen_leaf:
 
 ![mo-all-go-pt1-intro (8)](https://user-images.githubusercontent.com/80286982/132963411-8832af6e-3d26-43a7-8341-fd56cb781727.gif) 
 
-## Installation :fallen_leaf:
+## Installation   :fallen_leaf:
 
 ` copy code => in terminal git clone in preferred folder => cd to mo-all-go => npm install 
 `
 
-## Usage :fallen_leaf:
+## Usage   :fallen_leaf:
 
 ` npm start (If any issues watch walkthrough intro video)
 => Insomnia was used to test CRUD Create-Read-Update-Delete Routes`
@@ -69,12 +70,12 @@ https://drive.google.com/file/d/1b4BWTfm5TQUM3qO9K0FpG624dYnblJtc/view?usp=shari
 #### YouTube
 https://youtu.be/-E9Mgbf2EbU
 
-## Credits :fallen_leaf:
+## Credits   :fallen_leaf:
 
 Author : Mindy Diane Garza 
 
 ![image](https://user-images.githubusercontent.com/80286982/132966193-7ea60c44-beea-461a-806f-04678beb1fb8.png)
 
-## License :fallen_leaf:
+## License   :fallen_leaf:
 
 Licensed under the [MIT License](LICENSE).
